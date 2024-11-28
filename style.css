@@ -1,0 +1,95 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer';
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 70% 10%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    cursor: url("cursor.png") 16 16, auto;
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: lightgreen;
+    justify-content: space-between;
+}
+aside{
+    grid-area: aside;
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    grid-area: footer;
+    background-color: greenyellow;
+    text-align: right;
+}
+#snail{
+    grid-area: snail;
+    height: 20vh;
+
+}
+#div1{
+    grid-area: div1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+    border: outset 6px brown;
+    background-color: white;
+    text-align: center;
+
+}
+#div2{
+    grid-area: div2;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+    border: outset 6px brown;
+    background-color: white;
+    text-align: center;
+}
+#div3{
+    grid-area: div3;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+    border: outset 6px brown;
+    background-color: white;
+    text-align: center;
+}
+#ryba{
+    max-height: 50vh;
+    width: auto;
+}
+li{
+    font-size: 50px;
+}
+#red{
+    color: red;
+}
+#blue{
+    color: skyblue
+}
+a{
+    color: darkgreen
+}
+a:visited{
+    color: darkred
+}
+#div1:hover, #div2:hover, #div3:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
